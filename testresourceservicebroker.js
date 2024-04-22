@@ -753,6 +753,7 @@ var catalog = function(request, response)
                 "plans": [],
                 "metadata": {
                     "type": "private",
+                    "custom_create_page_url" : "https://test.cloud.ibm.com/power/overview",
                     "longDescription": "placeholder",
                     "displayName": "VMRM DRasService",
                     "imageUrl": null,
@@ -783,6 +784,7 @@ var catalog = function(request, response)
 
 var provision = function(request, response)
 {
+    console.log("TEST")
     var instanceId        = request.params.instance_id;
     var acceptsIncomplete = request.query.accepts_incomplete || false;
 
